@@ -1,0 +1,81 @@
+$(function(){
+      $("#rid").change(function(){
+        if($(this).is(":checked")){
+            alert("관공서나 공공기관에서는 사용하지마세요.");
+        }
+      });
+      
+      const useridFromCookie = getCookie('userid');
+      if(userIdFromCookie){
+      	$(".userid")
+      }
+
+	 $.validator.setDefaults({
+       onkeyup: false,
+       onclick: false,
+       onfocusout: false,
+       showErrors: function(errorMap, errorList){
+          if(this.numberOfInvalids()){
+             alert(errorList[0].message);
+          }
+       }
+    });
+
+    $('#loginform').validate({
+        debug: false, 
+        rules: {
+            userid: "required",
+            userpass: "required"
+        },
+        messages: {
+            userid: "아이디를 입력하세요.",
+            userpass: "비밀번호를 입력하세요."
+        },
+        submitHandler: function(form) {
+            
+            if ($('#rid').is(':checked')) {
+                setCookie('userid', $('#userid').val(), 1); 
+            }
+            form.submit(); 
+        }
+    });
+    
+    $('#registerform').validate({
+    	rules:{
+    		userid:{
+    			required: true,
+    			minlength: 3,
+    			maxlength: 9
+    		},
+    		userpass:{ required: true, minlength: 5},
+    		reuserpass:{ required: true, equalTo: "#userpass"},
+    	},
+    	messages:{
+    		userid:{
+    			required: '필수 입력 항목입니다.',
+    			minlength: '취소 {0}글자 이상 입력하세요',
+    			maxlength: '아이디가 너무 길어요. {0}자 이하로 입력하세요'
+    		},
+    		userpass: '비밀번호를 입력하세요.',
+    		reuserpass: { required: '비밀번호를 다시 입력하세요.', equalTo: "비밀번호가 맞지 않습니다."},
+    		},
+    	submitHandler: function(form){
+    	
+    	}
+    });
+});
+
+function setCookie(name, value, exp){
+   const date = new Date();
+   date.setTime(date.getTime() + exp*24*60*60*1000);
+   document.cookie = name + '=' + value + ';expires='+date.toUTCString() + ';path=/';
+}
+
+function getCookie(name){
+   const value = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+   return value? value[2]:null;
+}
+
+function delCookie(name){
+   document.cookie = name + '=; expires=Thu, 01 Jan 1999 00:00:10 GMT;';
+}

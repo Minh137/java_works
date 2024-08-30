@@ -1,0 +1,10 @@
+package Steam.exam001;
+
+public class ReadExam {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

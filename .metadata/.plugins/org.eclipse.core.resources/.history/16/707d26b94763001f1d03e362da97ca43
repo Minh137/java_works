@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+ <a href="servlet01?str=james">서블릿 02로 이동</a>
+  <a href="servlet03?str=sses">서블릿 04로 이동</a>
+  <a href="servlet05">서블릿05</a>
+</body>
+</html>

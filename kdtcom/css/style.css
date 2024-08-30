@@ -1,0 +1,119 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    background:#eee;
+    font-size:16px;
+}
+
+header{
+    top:20px;
+    left:0;
+    width:300px;
+    background:#fff;
+    padding:50px 30px;
+}
+.logo img{
+    max-width:100%;
+}
+.pl-300{
+    padding-left:320px;
+    padding-top:20px;
+}
+.comu-box{
+    background:#fff;
+    padding:20px;
+    margin-bottom:30px;
+    height:423px;
+}
+.comu-box h2{
+    border-bottom:1px solid #ddd;
+    font-size:18px;
+    font-weight:700;
+    padding-bottom:5px;
+    margin-bottom:15px;
+}
+.picture img{
+    max-width:100%;
+    filter:blur(1px);
+    transition: all 300ms;
+}
+.picture a:hover img{
+    filter:blur(0);
+    transform: scale(1.2);
+}
+.picture{
+    position:relative;
+    display:block;
+    overflow:hidden;
+}
+.txt-box{
+    position:absolute;
+    width:100%;
+    height:50px;
+    background:rgba(0,0,0,0.5);
+    color:#fff;
+    left:0;
+    bottom:0;
+    padding:15px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/**** 공지사항 ****/
+.notice-ul li{
+    padding:8px 10px;
+    border-bottom:1px dashed #ddd;
+    transition: all 300ms;
+}
+.notice-ul li:hover{
+    background:#eee;
+}
+.notice-ul a{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+    align-items:center;
+    color:#333;
+}
+.notice-ul span.notice-text{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:block;
+    width: calc(100% - 170px);
+}
+span.notice{
+    padding:1px 15px;
+    margin-right:10px;
+    color:#fff;
+    border-radius:5px;
+    display:block;
+    width: 86px;
+    text-align:center;
+  }
+  .notice1{
+      background:#e7717d;
+  }
+  .notice2{
+      background:#45a29e;
+  }
+  .notice3{
+      background:#123c69;
+  }
+  .notice4{
+      background:#8e8d8a;
+  }
+span.date{
+    float:right;
+}
+
+footer{
+    padding:20px 30px;
+    background:#666;
+    color:#fff;
+}
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1340px;
+    }
+}

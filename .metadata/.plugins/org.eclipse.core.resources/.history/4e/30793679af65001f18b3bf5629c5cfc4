@@ -1,0 +1,52 @@
+package kdtweb.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import kdtweb.dao.MySqlConnect;
+
+
+@WebServlet("/registerok")
+public class RegisterOk extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+
+	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		 res.setContentType("text.html;charset=utf-8");
+		 req.setCharacterEncoding("UTF-8");
+		 PrintWriter out = res.getWriter();
+		 
+		 Connection conn = null;
+		 String userid =req.getParameter("userid");
+		 String userpass =req.getParameter("userpass");
+		 String username =req.getParameter("username");
+		 String email =req.getParameter("email");
+		 String tel =req.getParameter("tel");
+		 String userpost = req.getParameter("postcode");
+		 String useraddr1 =req.getParameter("useraddr1");
+		 String useraddr2 =req.getParameter("useraddr2");
+		 String useraddrexc =req.getParameter("useraddrexc");
+		 
+		 MySqlConnect dbcon = new MySqlConnect();
+		 try {
+			 conn =dbcon.getConn();
+		 }catch (SQLException e) {
+			System.out.println("db접속에러"+ e.getMessage());
+		}
+	}
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	
+		doGet(request, response);
+	}
+
+}

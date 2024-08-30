@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="usr.jsp">
+		<label>이름</label>
+		<input type="text" id="name" name="name" required><br><br>
+		
+		<label>나이</label>
+		<input type="text" id="age" name="age" required><br><br>
+		
+		<label>주소</label>
+		<input type="text" id="addr" name="addr" required><br><br>
+		
+		<label>취미</label>
+		<input type="checkbox" id="hob" name="hob" required><br><br>
+		
+	</form>
+</body>
+</html>

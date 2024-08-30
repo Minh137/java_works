@@ -1,0 +1,49 @@
+package Steam.exam04;
+
+import java.io.*;
+
+
+public class BufferExam {
+
+	public static void main(String[] args) {
+		//입출력 스트림 생성
+		String oFilePath = "c:/demo/01.gif";
+		String nFolePath = "c:/demo/02.gif";
+		
+		String oFilePath2 = "c:/demo/01.gif";
+		String nFolePath2 = "c:/demo/02.gif";
+		//입출력 스트림에 버퍼 스트림 생성
+		try {
+			FileInputStream fis =new FileInputStream(oFilePath);
+			FileOutStream fos =new FileOutputStream(nFilePath);
+			
+			FileInputStream fis2 =new FileInputStream(oFilePath2);
+			FileOutStream fos2 =new FileOutputStream(nFilePath2);
+			BufferedInputStream bis = new BufferedInputStream(fis2);
+			BufferedOutputStream bos = new BufferedOutputStream(fos2);
+			
+			long nonBufferTime = copy(fis, fos);
+			System.out.println("버퍼 미사용"+nonBufferTime+"ns");
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Public static long copy(InputStream is, outputStream os) throw IOException e{
+			long start = System.nanoTime();
+			
+			while(true) {
+				int data = is.read();
+				if(data == -1) break;
+				os.write(data);
+			}
+			os.flush();
+			
+			long end = System.nanoTime();
+			
+			return(end-start);
+		}
+
+	}
+
+}

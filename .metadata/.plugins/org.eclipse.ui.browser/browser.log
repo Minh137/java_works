@@ -1,0 +1,42 @@
+
+8월 19, 2024 15:39:34.457 NEW SESSION
+8월 19, 2024 15:39:34.457 Created TensorFlow Lite XNNPACK delegate for CPU.
+8월 19, 2024 15:40:25.380 Created TensorFlow Lite XNNPACK delegate for CPU.
+8월 19, 2024 15:41:43.255 Created TensorFlow Lite XNNPACK delegate for CPU.
+8월 19, 2024 15:42:22.687 Created TensorFlow Lite XNNPACK delegate for CPU.
+8월 19, 2024 15:49:47.49 Created TensorFlow Lite XNNPACK delegate for CPU.
+8월 19, 2024 16:02:29.640 Created TensorFlow Lite XNNPACK delegate for CPU.
+8월 19, 2024 16:42:14.321 [17372:8108:0819/164214.321:ERROR:interface_endpoint_client.cc(722)] Message 5 rejected by interface blink.mojom.WidgetHost
+8월 19, 2024 16:45:04.144 [17372:8108:0819/164504.144:ERROR:interface_endpoint_client.cc(722)] Message 0 rejected by interface blink.mojom.WidgetHost
+8월 19, 2024 16:45:12.295 [17372:8108:0819/164512.294:ERROR:interface_endpoint_client.cc(722)] Message 0 rejected by interface blink.mojom.WidgetHost
+8월 19, 2024 16:55:14.839 [17372:8108:0819/165514.839:ERROR:interface_endpoint_client.cc(722)] Message 0 rejected by interface blink.mojom.WidgetHost
+
+8월 21, 2024 12:49:55.477 NEW SESSION
+8월 21, 2024 12:49:55.478 Created TensorFlow Lite XNNPACK delegate for CPU.
+8월 21, 2024 12:51:15.448 Created TensorFlow Lite XNNPACK delegate for CPU.
+8월 21, 2024 13:02:20.281 Created TensorFlow Lite XNNPACK delegate for CPU.
+8월 21, 2024 13:03:54.833 Created TensorFlow Lite XNNPACK delegate for CPU.
+8월 21, 2024 14:46:35.786 [9740:3236:0821/144635.785:ERROR:interface_endpoint_client.cc(722)] Message 0 rejected by interface blink.mojom.WidgetHost
+8월 21, 2024 15:50:26.923 [9740:3236:0821/155026.923:ERROR:device_event_log_impl.cc(196)] [15:50:26.923] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+
+8월 28, 2024 14:25:53.508 NEW SESSION
+8월 28, 2024 14:25:53.508 Created TensorFlow Lite XNNPACK delegate for CPU.
+8월 28, 2024 14:26:14.171 [4724:2808:0828/142614.170:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -118
+8월 28, 2024 14:26:47.911 [4724:5804:0828/142647.910:ERROR:persistent_memory_allocator.cc(908)] Corruption detected in shared-memory segment.
+8월 28, 2024 14:26:55.679 [4724:2808:0828/142655.678:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -118
+8월 28, 2024 14:28:11.212 [4724:2808:0828/142811.211:ERROR:connection_factory_impl.cc(434)] Failed to connect to MCS endpoint with error -118
+8월 28, 2024 14:58:42.376 Created TensorFlow Lite XNNPACK delegate for CPU.
+8월 28, 2024 15:34:15.268 [6620:3884:0828/153415.268:ERROR:interface_endpoint_client.cc(722)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+8월 29, 2024 09:36:49.190 NEW SESSION
+8월 29, 2024 09:36:49.190 Created TensorFlow Lite XNNPACK delegate for CPU.
+8월 29, 2024 10:34:47.514 [11008:2688:0829/103447.514:ERROR:interface_endpoint_client.cc(722)] Message 5 rejected by interface blink.mojom.WidgetHost
+8월 29, 2024 17:00:22.749 [11008:2688:0829/170022.749:ERROR:interface_endpoint_client.cc(722)] Message 0 rejected by interface blink.mojom.WidgetHost
+
+8월 30, 2024 09:34:41.14 NEW SESSION
+8월 30, 2024 09:34:41.14 Created TensorFlow Lite XNNPACK delegate for CPU.
+8월 30, 2024 09:34:57.865 Created TensorFlow Lite XNNPACK delegate for CPU.
+8월 30, 2024 10:16:53.262 Created TensorFlow Lite XNNPACK delegate for CPU.
+8월 30, 2024 10:39:36.391 Created TensorFlow Lite XNNPACK delegate for CPU.
+8월 30, 2024 10:43:07.879 Created TensorFlow Lite XNNPACK delegate for CPU.
+8월 30, 2024 14:47:33.487 [5924:11180:0830/144733.486:ERROR:interface_endpoint_client.cc(722)] Message 5 rejected by interface blink.mojom.WidgetHost

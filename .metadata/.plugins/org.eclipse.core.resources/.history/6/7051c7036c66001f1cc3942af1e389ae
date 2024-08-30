@@ -1,0 +1,46 @@
+package kdtweb.servlet;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import kdtweb.dao.MySqlConnect;
+
+@WebServlet("/findid")
+public class FindId extends HttpServlet {
+	
+       
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		Connection conn = null;
+		PreparedStatement pstmt =null;
+		ResultSet rs = null;
+		MySqlConnect dbCon = new MySqlConnect();
+		String findId = request.getParameter("userid");
+		try {
+			conn = dbCon.getConn();
+			String sql = "select count(*) from member where userid = ?";
+			pstmt = conn.prepareStatement(sql);
+			pstmt.setString(1, findId);
+			
+			pstmt.executeUpdate();	
+		}catch{
+			
+		}
+		
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		doGet(request, response);
+	}
+
+}

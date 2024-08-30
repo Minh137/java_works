@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="usr.jsp">
+		<label>이름</label>
+		<input type="text" id="name" name="name" required><br><br>
+		
+		<label>나이</label>
+		<input type="text" id="age" name="age" required><br><br>
+		
+		<label>주소</label>
+		<input type="text" id="addr" name="addr" required><br><br>
+		<p>취미</p>
+		<label>축구</label>
+		<input type="checkbox" id="hob" name="fb" required><br><br>
+		<label>야구</label>
+		<input type="checkbox" id="hob" name="bsb" required><br><br>
+		<label>농구</label>
+		<input type="checkbox" id="hob" name="bkb" required><br><br>
+		<label>탁구</label>
+		<input type="checkbox" id="hob" name="tb" required><br><br>
+		
+		<input type="submit" value="제출">
+	</form>
+</body>
+</html>

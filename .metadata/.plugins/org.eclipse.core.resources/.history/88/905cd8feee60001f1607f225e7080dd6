@@ -1,0 +1,11 @@
+package Steam.exam02;
+
+public class CopyExam {
+
+	public static void main(String[] args) {
+		
+		String oFilename = "c:/demo/img15.jpg/";
+		String oFilename = "c:/demo/img16.jpg/";
+	}
+
+}

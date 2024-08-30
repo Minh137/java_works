@@ -1,0 +1,10 @@
+package kdtweb.dao;
+
+public class MySqlConnect {
+	private String url="jdbc:mysql://localhost:3306/kdtweb";
+	private String options = "serverTimezone=UTC";
+	private String userid="";
+	private String userpass="";
+		
+	
+}

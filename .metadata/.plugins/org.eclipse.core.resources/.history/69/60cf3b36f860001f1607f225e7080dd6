@@ -1,0 +1,10 @@
+package Steam.exam04;
+
+public class BufferExam {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

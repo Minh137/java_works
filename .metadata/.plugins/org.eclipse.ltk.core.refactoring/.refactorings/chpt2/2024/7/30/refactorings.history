@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;NewCasting2Exam.java&apos; to &apos;chpt2/src/chpt2.sec07&apos;&#x0D;&#x0A;- Original project: &apos;chpt2&apos;&#x0D;&#x0A;- Destination element: &apos;chpt2/src/chpt2.sec07&apos;&#x0D;&#x0A;- Original element: &apos;chpt2.sec07.NewCasting2Exam.java&apos;" description="Copy compilation unit" destination="/src&lt;chpt2.sec07" element1="/src&lt;chpt2.sec07{NewCasting2Exam.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1721972869712" units="1" version="1.0"/>
+</session>

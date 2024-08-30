@@ -1,0 +1,22 @@
+package chpt06.sec03;
+
+public class Computer {
+	//가변길이 매개변술흘 갖는 메소드 선언
+	int sum(int ... values) {
+		int sum = 0;
+		for(int i =0; i < values.length; i++) {
+			sum += values[i];
+		}
+		
+		return sum;
+	}
+	
+	int sum2(int[] values) {
+		int sum = 0;
+		for(int i =0; i < values.length; i++) {
+			sum += values[i];
+		}
+		
+		return sum;
+	}
+}
