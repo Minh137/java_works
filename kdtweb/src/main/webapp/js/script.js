@@ -35,7 +35,7 @@ $(function(){
        }
     });
     
-        $.validator.addMethod('customPattern', function(value, element, param){
+    $.validator.addMethod('customPattern', function(value, element, param){
         return this.optional(element) || param.test(value);
     }, "아이디는 알파벳 대, 소문자와 숫자만 허용합니다.");
  
@@ -51,6 +51,7 @@ $(function(){
         }
     });
     
+    
     $('#registerform').validate({
        rules:{
           userid: {
@@ -58,7 +59,7 @@ $(function(){
              minlength: 3,
              maxlength: 9,
              customPattern : /^[a-zA-Z0-9]{3,9}$/,
-             remote: "findid"
+             remote: "45"
           },
           usrpass: { required: true, minlength: 5},
           reusrpass: { required: true, equalTo: "#usrpass" },
@@ -76,7 +77,8 @@ $(function(){
              required: '필수 입력 항목입니다.',
              minlength: '{0}글자 이상 입력하세요.',
              maxlength: '아이디가 너무 길어요. {0}자 이하로 입력하세요.',
-             remote: '아이디가 이용중입니다. 다른 아이디를 사용해주세요'
+             customPattern: '아이디는 알파벳 대,소문자와 숫자만 허용합니다.',
+             remote:  $.validator.format("{0} 은(는) 사용중입니다.")
           },
          usrpass: {
              required: '비밀번호를 입력하세요.',
@@ -95,40 +97,30 @@ $(function(){
           const email = $('#emailid').val() + "@" + ($("#emailDomain").val()==='act'? $('#emailDomain2').val():$('#emailDomain').val());
           $("#email").val(email);
           $.ajax({
-          	url: "findemail",
-          	data: {
-          		useremail: email
-          	},
-          	success: function(res){
-          		if(res > 0){
-	          		console.log(res);
-	          		alert("이미 존재하는 이메일입니다.");
-          		}else{
-          			const tel = $("#tel1").val() + "-" + $("#tel2").val() + "-" + $("#tel3").val();
-          			$("#tel").val(tel);
-          			form.submit();
-          		}
-          	},
-          	error: function(){
-          		alert("이메일 검증중 오류가 발생했습니다.");
-          	}
+             url:"findemail",
+             data: {
+                useremail: email
+             },
+             success: function(res){
+               
+                if(res > 0){
+                   console.log(res);
+                   alert("이미 존재하는 이메일입니다.");
+                }else{
+                   const tel = $("#tel1").val() + "-" + $("#tel2").val() + "-" + $("#tel3").val();
+                   $("#tel").val(tel);   
+                   form.submit();
+                }
+             }, 
+             error: function(){
+                alert("이메일 검증중 오류가 발생했습니다.");
+             }
           });
-          const tel = $("#tel1").val() + "-" + $("#tel2").val() + "-" + $("#tel3").val();
-          $("#tel").val(tel);        
-          
-          form.submit();                                      
+                                   
        }
     });
     
 });
-
-  $.validator.addMethod('customPattern', function(value, element, param){
-        return this.optional(element) || param.test(value);
-    }, "아이디는 알파벳 대, 소문자와 숫자만 허용합니다.");
-
-
-
-
 
 function setCookie(name, value, exp){
     const date = new Date();

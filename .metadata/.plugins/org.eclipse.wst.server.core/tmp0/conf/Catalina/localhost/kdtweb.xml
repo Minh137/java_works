@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context docBase="C:\java_works\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\kdtweb" path="/kdtweb" reloadable="true" source="org.eclipse.jst.jee.server:kdtweb"/>
+<Context docBase="C:\java_works\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\kdtweb" path="/kdtweb" reloadable="true" source="org.eclipse.jst.jee.server:kdtweb">
+  <Resource auth="Container" driverClassName="com.mysql.cj.jdbc.Driver" factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory" maxActive="200" maxIdle="50" minIdle="20" name="jdbc/kdtwebDB" password="0119" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/kdtweb?serverTimezone=UTC&amp;useUnicode=true&amp;characterEncoding=utf8" username="root"/>
+</Context>

@@ -150,12 +150,21 @@ a.blogs{
 
 /*************** 회원가입 ***************/
 .rg{
-	margin-bottom: 30px !improtant;
+	margin-bottom:30px !important;
 }
 .registerul{
 	padding:20px 40px;
 }
 
+/****************** 아이디, 비밀번호 찾기 ************/
+.rg.findidpass{
+	padding-bottom:50px;
+}
+#findidform, #findpwdform{
+	margin:30px 50px 50px;
+	padding:50px;
+	border:1px solid #ddd;
+}
 
 footer{
     padding:20px 30px;
@@ -166,13 +175,4 @@ footer{
     .container, .container-lg, .container-md, .container-sm, .container-xl {
         max-width: 1340px;
     }
-}
-/***********아이디 비밀번호 찾기************/
-.rg.findidpass{
-   padding-bottom:50px;
-}
-#findidform, #findpwdform{
-   margin:30px 50px 50px;
-   padding:50px;
-   border:1px solid #ddd;
 }

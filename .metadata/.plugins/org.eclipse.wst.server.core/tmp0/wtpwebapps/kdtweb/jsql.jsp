@@ -15,7 +15,7 @@
 	try{
 	conn = connBean.getConn();
 	out.println("데이터 베이스 접속 성공");
-	}catch(SQLException | ClassNotFoundException e){
+	}catch(SQLException e){
 		out.println("접속 에러 : " +e.getMessage());
 	}finally{
 		if(conn!= null){

@@ -1,0 +1,20 @@
+package kdtweb.dao.members;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+import kdtweb.beans.User;
+import kdtweb.dao.KdtwebDao;
+
+public class InsertMem {
+	//필드로 접속객체를 생성
+	private KdtwebDao dao = new KdtwebDao();
+	private Connection conn = null;
+	public int insertMember(User user) throws SQLException {
+		
+		
+		int rs = 0;
+		
+		return rs;
+	}
+}

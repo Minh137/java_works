@@ -1,0 +1,5 @@
+package kdtweb.dao;
+
+public class CloseResource {
+
+}

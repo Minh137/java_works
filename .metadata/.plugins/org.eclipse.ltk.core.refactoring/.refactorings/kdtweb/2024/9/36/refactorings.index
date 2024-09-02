@@ -1,0 +1,6 @@
+1725238619554	Copy file
+1725244077975	Move 'NewFile.xml' to 'META-INF'
+1725244102452	Rename resource 'NewFile.xml'
+1725246063582	Rename package 'kdtweb.members'
+1725248521641	Move 'CloseResource.java' to 'members'
+1725248838227	Move 'DeleteMem.java' to 'members'

@@ -1,7 +1,0 @@
-$(function(){
-   $("#rid").change(function(){
-   if($(this).is(":checked")){
-   alert("PC방,학교 등 공공장소에서는 체크라지 마십시오.");
-   
-
-});

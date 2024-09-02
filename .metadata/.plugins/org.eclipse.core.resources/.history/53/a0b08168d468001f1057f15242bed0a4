@@ -1,0 +1,12 @@
+<Context>
+	<Resource
+	 name="jdbc/kdtweb"
+	 auth="Container"
+	 type="javax.sql.DataSource"
+	 username = "root"
+	 password="5357"
+	 driverClassName="com.cj.jdbc.Driver"
+	 factory="org.apache.tomat.dbcp.dbcp2.BasicDataSourceFactory"
+	 maxActive="200"
+	 />
+</Context>
