@@ -1,9 +1,0 @@
-package kdtweb.dao;
-
-public class MySqlConnect {
-	private String url="";
-	private String userid="";
-	private String userpass="";
-		
-	
-}

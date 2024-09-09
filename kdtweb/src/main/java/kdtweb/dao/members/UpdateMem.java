@@ -47,4 +47,23 @@ public class UpdateMem {
 		    
 		   return rs;
 	   }
+	   
+	   public int adminMemEdit(int id, int grade) {
+		   int rs = 0;
+		   String sql = "UPDATE members SET grade=? where id = ?";
+		   try {
+			   conn = this.dao.getConn();
+			   pstmt = conn.prepareStatement(sql);
+			   pstmt.setInt(1, grade);
+			   pstmt.setInt(2, id);
+			   rs = pstmt.executeUpdate();
+			   
+		   }catch(SQLException e) {
+			   e.printStackTrace();
+		   }finally {
+			   reso.closeResource(conn, pstmt);
+		   }
+		   
+		   return rs;		   
+	   }
 }

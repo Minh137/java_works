@@ -45,3 +45,18 @@
 9월 02, 2024 09:33:32.486 Created TensorFlow Lite XNNPACK delegate for CPU.
 9월 02, 2024 10:05:30.550 [13744:5620:0902/100530.549:ERROR:interface_endpoint_client.cc(722)] Message 1 rejected by interface blink.mojom.WidgetHost
 9월 02, 2024 10:59:56.133 [13744:5620:0902/105956.133:ERROR:interface_endpoint_client.cc(722)] Message 5 rejected by interface blink.mojom.WidgetHost
+
+9월 05, 2024 10:20:36.924 NEW SESSION
+9월 05, 2024 10:20:36.924 Created TensorFlow Lite XNNPACK delegate for CPU.
+9월 05, 2024 11:05:35.164 [4840:6952:0905/110535.164:ERROR:cert_verify_proc_builtin.cc(1063)] CertVerifyProcBuiltin for wcs.naver.com failed:
+9월 05, 2024 11:05:35.165 ----- Certificate i=0 (CN=wcs.naver.com,O=NAVER Corp.,L=Seongnam-si,ST=Gyeonggi-do,C=KR) -----
+9월 05, 2024 11:05:35.165 ERROR: Time is after notAfter
+9월 05, 2024 11:05:35.166 
+9월 05, 2024 11:05:35.166 
+9월 05, 2024 12:31:08.44 [4840:4892:0905/123108.044:ERROR:interface_endpoint_client.cc(722)] Message 0 rejected by interface blink.mojom.WidgetHost
+9월 05, 2024 13:50:46.140 [4840:4892:0905/135046.139:ERROR:interface_endpoint_client.cc(722)] Message 0 rejected by interface blink.mojom.WidgetHost
+
+9월 09, 2024 09:35:43.916 NEW SESSION
+9월 09, 2024 09:35:43.916 Created TensorFlow Lite XNNPACK delegate for CPU.
+9월 09, 2024 09:36:32.307 Created TensorFlow Lite XNNPACK delegate for CPU.
+9월 09, 2024 10:17:57.708 Created TensorFlow Lite XNNPACK delegate for CPU.

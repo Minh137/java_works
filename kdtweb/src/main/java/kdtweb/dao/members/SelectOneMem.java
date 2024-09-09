@@ -18,11 +18,37 @@ public class SelectOneMem {
 
 	   public User selectOneMem(String userid) throws SQLException{
 		   User user = null;
-		   
+		   String sql = "select * from members where userid=?";
+		   try {
+			   conn = dao.getConn();
+			   pstmt = conn.prepareStatement(sql);
+			   pstmt.setString(1, userid);
+			   rs = pstmt.executeQuery();
+			   
+			   if(rs.next()) {
+				   user = new User();
+				   user.setId(rs.getInt("id"));
+				   user.setUserid(userid);
+				   user.setUsername(rs.getString("username"));
+				   user.setUseremail(rs.getString("useremail"));
+				   user.setUsertel(rs.getString("usertel"));
+				   user.setUserpost(rs.getInt("userpost"));
+				   user.setUseraddr1(rs.getString("useraddr1"));
+				   user.setUseraddr2(rs.getString("useraddr1"));
+				   user.setUseraddrexc(rs.getString("useraddrexc"));
+				   user.setRdate(rs.getTimestamp("rdate"));
+				   user.setGrade(rs.getInt("grade"));
+			   }
+			   
+		   }catch(SQLException e) {
+			   e.printStackTrace();
+		   }finally {
+			   reso.closeResource(conn, pstmt, rs);
+		   }
 		   return user;   
 	   }
 	   
-	   public int SelectOneMem(String userid, String userpass) throws SQLException{
+	   public int selectOneMem(String userid, String userpass) throws SQLException{
 		   int res = 0;
 		   String sql = "select * from members where userid=? and userpass=?";
 		   try {
@@ -33,7 +59,7 @@ public class SelectOneMem {
 			   rs = pstmt.executeQuery();
 		   
 			   if(rs.next()) {
-
+                 res = 1;
 			   }
 			   
 		   }catch(SQLException e) {

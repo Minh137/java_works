@@ -2,9 +2,6 @@ package kdtweb.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import javax.servlet.ServletContext;
@@ -16,13 +13,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import kdtweb.dao.KdtwebDao;
+import kdtweb.dao.members.SelectOneMem;
 
 
 @WebServlet("/loginok")
 public class LoginOk extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -58,21 +53,12 @@ public class LoginOk extends HttpServlet {
 			
 		}else { 
 			//db에서 검사
-			String sql = "select * from members where userid=? and userpass=?";
-			Connection conn = null;
-			PreparedStatement pstmt = null;
-			ResultSet  rs = null;
-			//MySqlConnect dbcon = new MySqlConnect();
-			KdtwebDao dbcon = new KdtwebDao();
+			SelectOneMem mem = new SelectOneMem();
 			try {
-				conn = dbcon.getConn();
-				pstmt = conn.prepareStatement(sql);
-				pstmt.setString(1, userid);
-				pstmt.setString(2, userpass);
-				rs = pstmt.executeQuery();
-				if(rs.next()) {
-					//검증성공
-				    //세션 및 쿠키 생성
+				int ct = mem.selectOneMem(userid, userpass);
+				System.out.println(ct);
+				if(ct > 0) {
+					
 					HttpSession session = request.getSession();
 					session.setAttribute("userid", userid);
 					if("ok".equals(rid)) {
@@ -80,23 +66,15 @@ public class LoginOk extends HttpServlet {
 						userCookie.setMaxAge(60*60*24*1);
 						response.addCookie(userCookie);
 					}
-					
 					response.sendRedirect("index.jsp");
-					
 				}else {
-					//검증실패
-					   String alert = "<script>alert('아이디 또는 비밀번호가 틀렸습니다.'); location.href='index.jsp';</script>";
-					   out.println(alert);
+					String alert = "<script>alert('아이디 또는 비밀번호가 틀렸습니다.'); location.href='index.jsp';</script>";
+					out.println(alert);
 				}
-				
-			}catch(SQLException e) {
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}finally {
-				if(rs != null) try {rs.close();}catch(SQLException e) {}
-				if(pstmt != null) try {pstmt.close();}catch(SQLException e) {}
-				if(conn != null) try {conn.close();}catch(SQLException e) {}
 			}
-			
 		}
 		
 	}

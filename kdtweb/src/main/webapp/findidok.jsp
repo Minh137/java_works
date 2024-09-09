@@ -21,7 +21,7 @@
 			   String youid = res.getString("userid");
 %>			   
 	
-	<div class="row">
+<div class="row">
   <div class="col-12">
      
      <div class="bg-white rg findidpass">
@@ -69,5 +69,5 @@
  %>
 
 
-</div>
+
 <%@ include file="include/footer.jsp" %>

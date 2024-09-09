@@ -59,7 +59,7 @@ $(function(){
              minlength: 3,
              maxlength: 9,
              customPattern : /^[a-zA-Z0-9]{3,9}$/,
-             remote: "45"
+             remote: "findid"
           },
           usrpass: { required: true, minlength: 5},
           reusrpass: { required: true, equalTo: "#usrpass" },

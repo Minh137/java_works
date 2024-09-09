@@ -2,6 +2,9 @@
     pageEncoding="UTF-8" import="kdtweb.dao.MySqlConnect, java.sql.*" %>
 <%@ include file="include/header.jsp" %>
 <%
+   HttpSession ses = request.getSession();
+   String sessionUserid = (String) ses.getAttribute("userid");
+
    MySqlConnect connBean = new MySqlConnect();
    Connection conn = null;
    PreparedStatement st = null;
@@ -30,14 +33,14 @@
         	String useraddr2 = rs.getString("useraddr2");
         	String useraddrexc = rs.getString("useraddrexc");
  %>      
-       <form name="registerform" id="registerform" action="registerok" method="post">
+       <form name="registerform" id="registerform" action="editok" method="post">
           <ul class="registerul">
              <li class="d-flex py-4">
                 <label for="userid" class="col-2 text-right">아이디</label>
                 <div class="col-4">
                    <input type="text" name="userid" id="usrid"
                     placeholder="아이디" 
-                    class="form-control"
+                    class="form-control" readonly
                     value="<%=userid%>">
                 </div>
              </li>
@@ -164,7 +167,7 @@
       </div>
      </div>
   </div>
-</div>
+
 <%@ include file="include/footer.jsp" %>
 
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
