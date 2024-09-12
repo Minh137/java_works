@@ -11,10 +11,17 @@ public class BoardDto {
    private Timestamp wdate;
    private String userid;
    private String password;
+   private String viewDate;
 
-   public String getUserid() {
+   public String getViewDate() {
+	return viewDate;
+	}
+	public void setViewDate(String viewDate) {
+		this.viewDate = viewDate;
+	}
+	public String getUserid() {
 	return userid;
-   }
+    }
 	public void setUserid(String userid) {
 		this.userid = userid;
 	}

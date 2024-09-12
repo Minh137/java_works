@@ -60,3 +60,78 @@
 9월 09, 2024 09:35:43.916 Created TensorFlow Lite XNNPACK delegate for CPU.
 9월 09, 2024 09:36:32.307 Created TensorFlow Lite XNNPACK delegate for CPU.
 9월 09, 2024 10:17:57.708 Created TensorFlow Lite XNNPACK delegate for CPU.
+
+9월 11, 2024 14:06:41.581 NEW SESSION
+9월 11, 2024 14:06:41.581 Created TensorFlow Lite XNNPACK delegate for CPU.
+9월 11, 2024 14:49:06.579 [1912:7952:0911/144906.579:ERROR:cert_verify_proc_builtin.cc(1063)] CertVerifyProcBuiltin for sync.adotmob.com failed:
+9월 11, 2024 14:49:06.580 ----- Certificate i=0 (CN=sync.adotmob.com) -----
+9월 11, 2024 14:49:06.580 ERROR: Time is after notAfter
+9월 11, 2024 14:49:06.580 
+9월 11, 2024 14:49:06.581 
+9월 11, 2024 14:53:08.156 [1912:7952:0911/145308.156:ERROR:cert_verify_proc_builtin.cc(1063)] CertVerifyProcBuiltin for sync.adotmob.com failed:
+9월 11, 2024 14:53:08.157 ----- Certificate i=0 (CN=sync.adotmob.com) -----
+9월 11, 2024 14:53:08.158 ERROR: Time is after notAfter
+9월 11, 2024 14:53:08.158 
+9월 11, 2024 14:53:08.159 
+9월 11, 2024 14:55:08.379 [1912:7952:0911/145508.378:ERROR:cert_verify_proc_builtin.cc(1063)] CertVerifyProcBuiltin for sync.adotmob.com failed:
+9월 11, 2024 14:55:08.379 ----- Certificate i=0 (CN=sync.adotmob.com) -----
+9월 11, 2024 14:55:08.380 ERROR: Time is after notAfter
+9월 11, 2024 14:55:08.380 
+9월 11, 2024 14:55:08.381 
+9월 11, 2024 14:57:10.602 [1912:7952:0911/145710.601:ERROR:cert_verify_proc_builtin.cc(1063)] CertVerifyProcBuiltin for sync.adotmob.com failed:
+9월 11, 2024 14:57:10.603 ----- Certificate i=0 (CN=sync.adotmob.com) -----
+9월 11, 2024 14:57:10.603 ERROR: Time is after notAfter
+9월 11, 2024 14:57:10.604 
+9월 11, 2024 14:57:10.604 
+9월 11, 2024 14:57:42.392 [1912:7952:0911/145742.392:ERROR:cert_verify_proc_builtin.cc(1063)] CertVerifyProcBuiltin for sync.adotmob.com failed:
+9월 11, 2024 14:57:42.392 ----- Certificate i=0 (CN=sync.adotmob.com) -----
+9월 11, 2024 14:57:42.393 ERROR: Time is after notAfter
+9월 11, 2024 14:57:42.393 
+9월 11, 2024 14:57:42.393 
+9월 11, 2024 15:01:10.72 [1912:7952:0911/150110.072:ERROR:cert_verify_proc_builtin.cc(1063)] CertVerifyProcBuiltin for sync.adotmob.com failed:
+9월 11, 2024 15:01:10.72 ----- Certificate i=0 (CN=sync.adotmob.com) -----
+9월 11, 2024 15:01:10.72 ERROR: Time is after notAfter
+9월 11, 2024 15:01:10.72 
+9월 11, 2024 15:01:10.72 
+9월 11, 2024 15:01:10.326 [1912:7952:0911/150110.326:ERROR:cert_verify_proc_builtin.cc(1063)] CertVerifyProcBuiltin for sync.adotmob.com failed:
+9월 11, 2024 15:01:10.326 ----- Certificate i=0 (CN=sync.adotmob.com) -----
+9월 11, 2024 15:01:10.326 ERROR: Time is after notAfter
+9월 11, 2024 15:01:10.327 
+9월 11, 2024 15:01:10.327 
+9월 11, 2024 15:01:11.808 [1912:7952:0911/150111.808:ERROR:cert_verify_proc_builtin.cc(1063)] CertVerifyProcBuiltin for sync.adotmob.com failed:
+9월 11, 2024 15:01:11.808 ----- Certificate i=0 (CN=sync.adotmob.com) -----
+9월 11, 2024 15:01:11.824 ERROR: Time is after notAfter
+9월 11, 2024 15:01:11.824 
+9월 11, 2024 15:01:11.824 
+9월 11, 2024 15:01:43.966 [1912:7952:0911/150143.966:ERROR:cert_verify_proc_builtin.cc(1063)] CertVerifyProcBuiltin for sync.adotmob.com failed:
+9월 11, 2024 15:01:43.966 ----- Certificate i=0 (CN=sync.adotmob.com) -----
+9월 11, 2024 15:01:43.967 ERROR: Time is after notAfter
+9월 11, 2024 15:01:43.967 
+9월 11, 2024 15:01:43.967 
+9월 11, 2024 15:01:44.228 [1912:7952:0911/150144.228:ERROR:cert_verify_proc_builtin.cc(1063)] CertVerifyProcBuiltin for sync.adotmob.com failed:
+9월 11, 2024 15:01:44.228 ----- Certificate i=0 (CN=sync.adotmob.com) -----
+9월 11, 2024 15:01:44.228 ERROR: Time is after notAfter
+9월 11, 2024 15:01:44.228 
+9월 11, 2024 15:01:44.229 
+9월 11, 2024 15:05:46.735 [1912:7952:0911/150546.735:ERROR:cert_verify_proc_builtin.cc(1063)] CertVerifyProcBuiltin for sync.adotmob.com failed:
+9월 11, 2024 15:05:46.735 ----- Certificate i=0 (CN=sync.adotmob.com) -----
+9월 11, 2024 15:05:46.735 ERROR: Time is after notAfter
+9월 11, 2024 15:05:46.735 
+9월 11, 2024 15:05:46.735 
+9월 11, 2024 15:09:48.767 [1912:7952:0911/150948.767:ERROR:cert_verify_proc_builtin.cc(1063)] CertVerifyProcBuiltin for sync.adotmob.com failed:
+9월 11, 2024 15:09:48.768 ----- Certificate i=0 (CN=sync.adotmob.com) -----
+9월 11, 2024 15:09:48.768 ERROR: Time is after notAfter
+9월 11, 2024 15:09:48.768 
+9월 11, 2024 15:09:48.768 
+9월 11, 2024 15:41:47.433 [1912:7952:0911/154147.433:ERROR:cert_verify_proc_builtin.cc(1063)] CertVerifyProcBuiltin for sync.adotmob.com failed:
+9월 11, 2024 15:41:47.433 ----- Certificate i=0 (CN=sync.adotmob.com) -----
+9월 11, 2024 15:41:47.433 ERROR: Time is after notAfter
+9월 11, 2024 15:41:47.433 
+9월 11, 2024 15:41:47.433 
+9월 11, 2024 16:21:46.313 [1912:7952:0911/162146.312:ERROR:cert_verify_proc_builtin.cc(1063)] CertVerifyProcBuiltin for sync.adotmob.com failed:
+9월 11, 2024 16:21:46.314 ----- Certificate i=0 (CN=sync.adotmob.com) -----
+9월 11, 2024 16:21:46.314 ERROR: Time is after notAfter
+9월 11, 2024 16:21:46.315 
+9월 11, 2024 16:21:46.315 
+9월 11, 2024 18:04:32.457 [1912:9344:0911/180432.457:ERROR:sharing_service.cc(251)] Device un-registration failed with fatal error
+9월 11, 2024 18:04:33.922 [1912:9344:0911/180433.922:ERROR:device_event_log_impl.cc(196)] [18:04:33.922] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.

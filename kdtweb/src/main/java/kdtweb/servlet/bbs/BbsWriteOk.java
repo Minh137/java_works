@@ -41,7 +41,7 @@ public class BbsWriteOk extends HttpServlet {
 		bbsDto.setUserid(userid);
 		int rs = 0;
 		try {
-			rs = bbs.inserBoard(bbsDto);
+			rs = bbs.insertBoard(bbsDto);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

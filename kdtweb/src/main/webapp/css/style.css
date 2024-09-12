@@ -10,7 +10,7 @@ header{
     width:300px;
     background:#fff;
     padding:50px 30px;
-    height:calc(100% - 50px);
+    height:calc(100% - 30px);
 }
 .logo img{
     max-width:100%;
@@ -190,6 +190,7 @@ footer{
 /****************** BBS ******************/
 .bbs{
 	padding:30px 50px !important;
+	margin-bottom:50px;
 }
 
 /************ LIST **************/
@@ -198,6 +199,18 @@ footer{
 	max-width:865px;
 	border-bottom:2px solid #333;
 	margin-bottom:40px;
+}
+.search-and-button{
+	width:100%;
+	max-width:895px;
+	margin:0px -15px 40px;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.bbslist a{
+	color:#212529;
+	text-decoration:none;
 }
 .bbslist th{
 	padding-top:10px;
@@ -241,3 +254,82 @@ footer{
 .w-label+textarea{
 	height: 200px;
 }
+
+/*************** view ******************/
+section.view{
+	background:#ddd;
+	padding:10px;
+	border-radius:5px;
+	position:relative;
+}
+.view-box{
+	background:#fff;
+	min-height:600px;
+	border-radius:5px;
+}
+.view-head{
+	padding:20px 30px;
+	border-bottom:1px solid #ddd;
+	font-size:18px;
+	font-weight:600;
+}
+.view-head i{
+	margin-right:15px;
+}
+
+.contents-box{
+	display:flex;
+	font-size:14px;
+	padding:10px 30px 50px;
+}
+.contents-box div{
+	padding-right:40px;
+	position:relative;
+}
+.contents-box div::after{
+	content:"";
+	display:block;
+	background:#999;
+	width:1px;
+	height:8px;
+	top:5px;
+	right:20px;
+	position:absolute;
+}
+.contents-box div i{
+	margin-right:15px;
+}
+.view-box .contents{
+	padding:0 30px 50px;
+}
+.view .view-foot{
+	position:absolute;
+	width:100%;
+	padding:40px;
+	text-align:right;
+	bottom:0;
+}
+
+/**** pass ****/
+.pass-box{
+	text-align:center;
+	padding:50px 50px 100px;
+}
+.pass-box p{
+	margin-bottom:50px;
+	color:red;
+}
+.bbspass{
+	width:50%;
+	padding:40px;
+	margin:auto;
+	background:#ddd;
+}
+.bbspass>.password{
+	margin-bottom:40px;
+}
+
+
+
+
+
