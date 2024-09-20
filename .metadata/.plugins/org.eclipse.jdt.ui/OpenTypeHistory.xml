@@ -4,4 +4,7 @@
     <typeInfo handle="=chpt07/src&lt;chpt07.sec08{Animal.java[Animal" modifiers="1025" timestamp="1723620651204"/>
     <typeInfo handle="=chpt08/src&lt;chpt08.sec01{RemoteControl.java[RemoteControl" modifiers="513" timestamp="1723625448233"/>
     <typeInfo handle="=chpt13/src&lt;chpt13.sec02{Rentable.java[Rentable" modifiers="513" timestamp="1724226678256"/>
+    <typeInfo handle="=webjdbc01/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;net.minh137.webjdbc.dao{MemberDao.java[MemberDao" modifiers="513" timestamp="1726794800281"/>
+    <typeInfo handle="=webjdbc01/C:\/Users\/i7E-018\/.m2\/repository\/org\/aspectj\/aspectjrt\/1.6.10\/aspectjrt-1.6.10.jar=/maven.pomderived=/true=/=/org.eclipse.jst.component.dependency=/\/WEB-INF\/lib=/=/maven.pomderived=/true=/=/org.eclipse.jst.component.archivename=/aspectjrt-1.6.10.jar=/=/maven.groupId=/org.aspectj=/=/maven.artifactId=/aspectjrt=/=/maven.version=/1.6.10=/=/maven.scope=/compile=/&lt;org.aspectj.lang.reflect(MemberSignature.class[MemberSignature" modifiers="1537" timestamp="1726729933232"/>
+    <typeInfo handle="=mybatis/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;net.minh137.mybatis.dao{MemDao.java[MemDao" modifiers="513" timestamp="1727069507764"/>
 </typeInfoHistroy>

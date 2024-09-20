@@ -1,4 +1,7 @@
-GitRepositoriesView.GitDirectories=C\:\\java_works\\.git;
-GitRepositoriesView.GitDirectories.relative=.git;
+GitRepositoriesView.GitDirectories=C\:\\java_works\\.git;C\:\\Users\\i7E-018\\git\\Gahyun-Project\\.git;
+GitRepositoriesView.GitDirectories.relative=.git;C\:\\Users\\i7E-018\\git\\Gahyun-Project\\.git;
+RepositoryGroups.uuids=
+RepositorySearchDialogDeepSearch=false
+RepositorySearchDialogSearchPath=C\:\\Users\\i7E-018\\git
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1
