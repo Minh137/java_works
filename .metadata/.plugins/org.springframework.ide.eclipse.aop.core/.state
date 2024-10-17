@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="scorecard"/>
+<aop-project name="secloginxml"/>
 <aop-project name="webmvc"/>
+<aop-project name="scorecard"/>
 <aop-project name="Myspling2"/>
+<aop-project name="secloginclass"/>
 <aop-project name="mybatis"/>
 <aop-project name="kdtcom"/>
 <aop-project name="webjdbc01"/>

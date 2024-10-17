@@ -135,3 +135,12 @@
 9월 11, 2024 16:21:46.315 
 9월 11, 2024 18:04:32.457 [1912:9344:0911/180432.457:ERROR:sharing_service.cc(251)] Device un-registration failed with fatal error
 9월 11, 2024 18:04:33.922 [1912:9344:0911/180433.922:ERROR:device_event_log_impl.cc(196)] [18:04:33.922] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+
+9월 26, 2024 09:48:42.710 NEW SESSION
+9월 26, 2024 09:48:42.710 Created TensorFlow Lite XNNPACK delegate for CPU.
+9월 26, 2024 11:27:20.201 [2084:11324:0926/112720.201:ERROR:cert_verify_proc_builtin.cc(1063)] CertVerifyProcBuiltin for report.edgecast.com failed:
+9월 26, 2024 11:27:20.201 ----- Certificate i=0 (CN=report.edgecast.com) -----
+9월 26, 2024 11:27:20.201 ERROR: Time is after notAfter
+9월 26, 2024 11:27:20.201 
+9월 26, 2024 11:27:20.201 
+9월 26, 2024 11:31:17.492 [2084:8392:0926/113117.492:ERROR:interface_endpoint_client.cc(725)] Message 0 rejected by interface blink.mojom.WidgetHost
