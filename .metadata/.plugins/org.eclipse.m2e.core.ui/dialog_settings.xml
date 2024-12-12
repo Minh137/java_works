@@ -71,6 +71,7 @@
 	</section>
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="market"/>
 			<item value="scorecard"/>
 			<item value="Myspling3"/>
 			<item value="Myspling2"/>
@@ -79,6 +80,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="market"/>
 			<item value="scorecard"/>
 			<item value="Myspling3"/>
 			<item value="Myspling2"/>
